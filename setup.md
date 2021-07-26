@@ -3,11 +3,6 @@ layout: page
 title: Setup
 ---
 
-This workshop is designed to be run on pre-imaged Amazon Web Services 
-(AWS) instances. For information about how to
-use the workshop materials, see the 
-[setup instructions](https://www.datacarpentry.org/genomics-workshop/setup.html) on the main workshop page.
-
 To participate in this Library Carpentry lesson, you will need a working UNIX-like shell environment.
 Specifically we will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell))) which is standard on Linux and macOS. macOS Catalina users will have zsh (Z shell) as their default version.
 Even if you are a Windows user, learning Bash will open up a powerful set of tools on your personal machine, in addition to familiarizing you with the standard remote interface used on almost all servers and super computers.
@@ -24,24 +19,13 @@ Even if you are a Windows user, learning Bash will open up a powerful set of too
 >    - Double click the `.exe` to run the installer (for example, `Git-2.13.3-64-bit.exe`) using the default settings.
 >    - Once installed, open the shell by selecting Git Bash from the start menu (in the Git folder).
 >
->     There are also some more advanced solutions available for running Bash
->     commands on Windows.  A Bash shell command-line tool is available for
->     Windows 10, which you can use if you enable the [Windows Subsystem for
->     Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
->     Additionally, you can run Bash commands on a remote computer or server
->     that already has a Unix Shell, from your Windows machine.  This can
->     usually be done through a Secure Shell (SSH) client.  One such client
->     available for free for Windows computers is
->     [PuTTY](http://faculty.smu.edu/reynolds/unixtut/windows.html).
->
->If you encounter issues, the Carpentries maintains a [Configuration Problems and Solutions wiki page](https://github.com/carpentries/workshop-template/wiki/Configuration-Problems-and-Solutions) that may help.
 {: .prereq}
 
 >## Data Files
 >
 >You need to download some files to follow this lesson:
 >
->1. Download [shell-lesson.zip]({{ page.root }}/data/shell-lesson.zip) and move the file to your Desktop.
+>1. Download [CLI Class Directory](https://osf.io/m37zn/download) and move the file to your Desktop.
 >2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell-lesson` on your Desktop.
 >3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
 >~~~~

@@ -135,7 +135,7 @@ $ pwd
 {: .bash}
 
 ~~~
-/home/dcuser
+/Users/jpcourneya
 ~~~
 {: .output}
 
