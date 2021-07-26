@@ -58,6 +58,14 @@ by manipulating some experimental data. Some of the data we're going to be worki
 we're also going to be using several bioinformatic packages in later
 lessons to work with this data. 
 
+This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
+our workshop, so you can clear your screen using the `clear` command. 
+
+~~~
+$ clear
+~~~
+{: .bash}
+
 This will scroll your screen down to give you a fresh screen and will make it easier to read. 
 You haven't lost any of the information on your screen. If you scroll up, you can see everything that has been output to your screen
 up until this point.
