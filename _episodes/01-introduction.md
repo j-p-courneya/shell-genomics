@@ -143,7 +143,7 @@ The command to change locations in our file system is `cd`, followed by a
 directory name to change our working directory.
 `cd` stands for "change directory".
 
-Let's say we want to navigate to the `/Desktop/CLI_Class_Directory` directory.  We can
+Let's say we want to navigate to the `~/Desktop/CLI_Class_Directory` directory.  We can
 use the following command to get there:
 
 ~~~
