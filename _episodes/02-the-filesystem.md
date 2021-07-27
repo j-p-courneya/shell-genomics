@@ -328,19 +328,19 @@ In my case, the `root` directory is __two__ levels above my
 
 ~~~
 $ cd
-$ cd shell_data
+$ cd Desktop/CLI_Class_Directory/shell_data
 ~~~
 {: .bash}
 
 Then enter the command:
 
 ~~~
-$ ls /Desktop/CLI_Class_Directory
+$ ls ~/Desktop/CLI_Class_Directory
 ~~~
 {: .bash}
 
 ~~~
-shell_data
+notes		shell_data
 ~~~
 {: .output}
 
