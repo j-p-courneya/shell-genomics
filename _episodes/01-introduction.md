@@ -137,7 +137,7 @@ Desktop      Downloads    Movies       Pictures
 Your results might be slightly different than mine, `ls` prints the names of the files and directories in the current directory in
 alphabetical order,
 arranged neatly into columns. 
-We'll be working within the `/Desktop/CLI_Class_Directory` subdirectory, and creating new subdirectories, throughout this workshop.  
+We'll be working within the `~/Desktop/CLI_Class_Directory` subdirectory, and creating new subdirectories, throughout this workshop.  
 
 The command to change locations in our file system is `cd`, followed by a
 directory name to change our working directory.
@@ -147,7 +147,7 @@ Let's say we want to navigate to the `/Desktop/CLI_Class_Directory` directory.  
 use the following command to get there:
 
 ~~~
-$ cd /Desktop/CLI_Class_Directory/shell_data
+$ cd Desktop/CLI_Class_Directory
 ~~~
 {: .bash}
 
