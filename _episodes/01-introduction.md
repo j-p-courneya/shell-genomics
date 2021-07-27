@@ -108,7 +108,7 @@ the directory that the computer assumes we want to run commands in,
 unless we explicitly specify something else.
 Here,
 the computer's response is `/Users/jpcourneya`,
-which is the top level directory within our cloud system:
+which is the top level directory within my computing system:
 
 ~~~
 $ pwd
@@ -129,21 +129,41 @@ $ ls
 {: .bash}
 
 ~~~
-shell_data
+Applications Documents    Library      Music        Public
+Desktop      Downloads    Movies       Pictures
 ~~~
 {: .output}
 
-`ls` prints the names of the files and directories in the current directory in
+Your results might be slightly different than mine, `ls` prints the names of the files and directories in the current directory in
 alphabetical order,
 arranged neatly into columns. 
-We'll be working within the `shell_data` subdirectory, and creating new subdirectories, throughout this workshop.  
+We'll be working within the `/Desktop/CLI_Class_Directory` subdirectory, and creating new subdirectories, throughout this workshop.  
 
 The command to change locations in our file system is `cd`, followed by a
 directory name to change our working directory.
 `cd` stands for "change directory".
 
-Let's say we want to navigate to the `shell_data` directory we saw above.  We can
+Let's say we want to navigate to the `/Desktop/CLI_Class_Directory` directory.  We can
 use the following command to get there:
+
+~~~
+$ cd /Desktop/CLI_Class_Directory/shell_data
+~~~
+{: .bash}
+
+Let's look at what is in this directory:
+
+~~~
+$ ls
+~~~
+{: .bash}
+
+~~~
+notes		shell_data
+~~~
+{: .output}
+
+Let's say we want to navigate to the `shell_data` directory.  We can use the following command to get there:
 
 ~~~
 $ cd shell_data

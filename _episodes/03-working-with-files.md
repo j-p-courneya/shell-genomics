@@ -32,7 +32,7 @@ have two results files, which are stored in our `untrimmed_fastq` directory.
 Navigate to your `untrimmed_fastq` directory:
 
 ~~~
-$ cd ~/shell_data/untrimmed_fastq
+$ cd /Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq
 ~~~
 {: .bash}
 
