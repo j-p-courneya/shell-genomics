@@ -80,7 +80,7 @@ $ ls ~/Desktop/CLI_Class_Directory/notes/*.txt
 ~~~
 {: .output}
 
-Lists every file in `/usr/bin` that ends in the characters `.sh`.
+Lists every file in `~/Desktop/CLI_Class_Directory/notes` that ends in the characters `.txt`.
 Note that the output displays __full__ paths to files, since
 each result starts with `/`.
 
@@ -88,11 +88,11 @@ each result starts with `/`.
 > Do each of the following tasks from your current directory using a single
 > `ls` command for each:
 > 
-> 1.  List all of the files in `/usr/bin` that start with the letter 'c'.
-> 2.  List all of the files in `/usr/bin` that contain the letter 'a'. 
-> 3.  List all of the files in `/usr/bin` that end with the letter 'o'.
+> 1.  List all of the files in `~/Desktop` that start with the letter 'c'.
+> 2.  List all of the files in `~/Desktop` that contain the letter 'a'. 
+> 3.  List all of the files in `~/Desktop` that end with the letter 'o'.
 >
-> Bonus: List all of the files in `/usr/bin` that contain the letter 'a' or the
+> Bonus: List all of the files in `~/Desktop` that contain the letter 'a' or the
 > letter 'c'.
 > 
 > Hint: The bonus question requires a Unix wildcard that we haven't talked about
@@ -100,10 +100,10 @@ each result starts with `/`.
 > what you need to solve the bonus problem.
 > 
 > > ## Solution
-> > 1. `ls /usr/bin/c*`
-> > 2. `ls /usr/bin/*a*`
-> > 3. `ls /usr/bin/*o`  
-> > Bonus: `ls /usr/bin/*[ac]*`
+> > 1. `ls ~/Desktop/c*`
+> > 2. `ls ~/Desktop/*a*`
+> > 3. `ls ~/Desktop/*o`  
+> > Bonus: `ls ~/Desktop/*[ac]*`
 > > 
 > {: .solution}
 {: .challenge}
@@ -182,7 +182,7 @@ For example, if your history looked like this:
 
 ~~~
 259  ls *
-260  ls /usr/bin/*.sh
+260  ls ~/Desktop/CLI_Class_Directory/notes/*.txt
 261  ls *R1*fastq
 ~~~
 {: .output}
@@ -201,7 +201,7 @@ For more information on advanced usage of `history`, read section 9.3 of
 
 > ## Exercise
 > Find the line number in your history for the command that listed all the .sh
-> files in `/usr/bin`. Rerun that command.
+> files in `~/Desktop`. Rerun that command.
 >
 > > ## Solution
 > > First type `history`. Then use `!` followed by the line number to rerun that command.
