@@ -68,7 +68,7 @@ $ pwd
 {: .bash}
 
 ~~~
-/home/dcuser/shell_data
+/Users/jpcourneya/shell_data
 ~~~
 {: .output}
 
@@ -91,7 +91,7 @@ $ ls ../../
 ~~~
 {: .bash}
 
-prints the contents of `/home`.
+prints the contents of `~/Desktop`.
 
 > ## Finding hidden directories
 >
@@ -158,10 +158,10 @@ By default, the `ls` commands lists the contents of the working
 directory (i.e. the directory you are in). You can always find the
 directory you are in using the `pwd` command. However, you can also
 give `ls` the names of other directories to view. Navigate to your
-home directory if you are not already there.
+project directory `~/Desktop/CLI_Class_Directory` if you are not already there.
 
 ~~~
-$ cd
+$ cd ~/Desktop/CLI_Class_Directory
 ~~~
 {: .bash}
 
@@ -195,13 +195,13 @@ the intermediate directory.
 
 > ## Navigating practice
 > 
-> Navigate to your home directory. From there, list the contents of the `untrimmed_fastq` 
+> Navigate to your project directory. From there, list the contents of the `untrimmed_fastq` 
 > directory. 
 > 
 > > ## Solution
 > >
 > > ~~~
-> > $ cd
+> > $ cd ~/Desktop/CLI_Class_Directory
 > > $ ls shell_data/untrimmed_fastq/
 > > ~~~
 > > {: .bash}
@@ -229,25 +229,24 @@ $ pwd
 ~~~
 {: .bash}
 
-You will see: 
+You will see something like: 
 
 ~~~
-/home/dcuser
+/Users/jpcourneya
 ~~~
 {: .output}
 
-This is the full name of your home directory. This tells you that you
-are in a directory called `dcuser`, which sits inside a directory called
-`home` which sits inside the very top directory in the hierarchy. The
+This is the full name of my home directory. This tells me that Im in a directory called `jpcourneya`, which sits inside a directory called
+`Users` which sits inside the very top directory in the hierarchy. The
 very top of the hierarchy is a directory called `/` which is usually
-referred to as the *root directory*. So, to summarize: `dcuser` is a
-directory in `home` which is a directory in `/`. More on `root` and
+referred to as the *root directory*. So, to summarize: `jpcourneya` is a
+directory in `Users` which is a directory in `/`. More on `root` and
 `home` in the next section.
 
 Now enter the following command:
 
 ~~~
-$ cd /home/dcuser/shell_data/.hidden
+$ cd {YOUR HOME DIRECTORY}/Desktop/CLI_Class_Directory/shell_data/.hidden
 ~~~
 {: .bash}
 
@@ -262,7 +261,7 @@ $ cd
 You can also navigate to the `.hidden` directory using:
 
 ~~~
-$ cd shell_data/.hidden
+$ cd /Desktop/CLI_Class_Directory/shell_data/.hidden
 ~~~
 {: .bash}
 
@@ -322,9 +321,9 @@ in `root` directories will require special permissions which are
 not discussed here, so it’s best to avoid them and work within your
 home directory. Dealing with the `home` directory is very common.
 The tilde character, `~`, is a shortcut for your home directory.
-In our case, the `root` directory is __two__ levels above our
-`home` directory, so `cd` or `cd ~` will take you to
-`/home/dcuser` and `cd /` will take you to `/`. Navigate to the
+In my case, the `root` directory is __two__ levels above my
+`home` directory, so `cd` or `cd ~` will take me to
+`/Users/jpcourneya` and `cd /` will take me to `/`. Navigate to the
 `shell_data` directory:
 
 ~~~
@@ -336,16 +335,16 @@ $ cd shell_data
 Then enter the command:
 
 ~~~
-$ ls ~
+$ ls /Desktop/CLI_Class_Directory
 ~~~
 {: .bash}
 
 ~~~
-R  r_data  shell_data
+shell_data
 ~~~
 {: .output}
 
-This prints the contents of your home directory, without you needing to 
+This prints the contents of your project directory, without you needing to 
 type the full path. 
 
 The commands `cd`, and `cd ~` are very useful for quickly navigating back to your home directory. We will be using the `~` character in later lessons to specify our home directory.

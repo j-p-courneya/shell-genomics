@@ -54,26 +54,7 @@ On a Mac or Linux machine, you can access a shell through a program called Termi
 on your computer. If you're using Windows, you'll need to download a separate program to access the shell. For Windows you can use Git BASH which you have installed.
 
 We will spend most of our time learning about the basics of the shell
-by manipulating some experimental data. Some of the data we're going to be working with is quite large, and
-we're also going to be using several bioinformatic packages in later
-lessons to work with this data. 
-
-This provides a lot of information about the remote server that you're logging in to. We're not going to use most of this information for
-our workshop, so you can clear your screen using the `clear` command. 
-
-~~~
-$ clear
-~~~
-{: .bash}
-
-This will scroll your screen down to give you a fresh screen and will make it easier to read. 
-You haven't lost any of the information on your screen. If you scroll up, you can see everything that has been output to your screen
-up until this point.
-
-> ## Tip
->
-> If you like to use hot-key combinations you might be interested to know that clearing the console can also be achieved by pressing `Ctrl+L`. Feel free to try it and see for yourself.
-{: .callout}
+by manipulating some experimental data. 
 
 ## Navigating your file system
 
@@ -126,7 +107,7 @@ i.e.,
 the directory that the computer assumes we want to run commands in,
 unless we explicitly specify something else.
 Here,
-the computer's response is `/home/dcuser`,
+the computer's response is `/Users/jpcourneya`,
 which is the top level directory within our cloud system:
 
 ~~~
@@ -148,7 +129,7 @@ $ ls
 {: .bash}
 
 ~~~
-R  r_data  shell_data
+shell_data
 ~~~
 {: .output}
 
@@ -224,8 +205,8 @@ to quit.
 > > 
 > > ~~~
 > > total 8
-> > drwxr-x--- 2 dcuser dcuser 4096 Jul 30  2015 sra_metadata
-> > drwxr-xr-x 2 dcuser dcuser 4096 Nov 15  2017 untrimmed_fastq
+> > drwxr-x--- 2 jpcourneya  staff 4096 Jul 30  2015 sra_metadata
+> > drwxr-xr-x 2 jpcourneya  staff 4096 Nov 15  2017 untrimmed_fastq
 > > ~~~
 > > {: .output}
 > > 

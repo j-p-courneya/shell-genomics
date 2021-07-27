@@ -3,7 +3,7 @@ layout: page
 title: Setup
 ---
 
-To participate in this Library Carpentry lesson, you will need a working UNIX-like shell environment.
+To participate in this lesson, you will need a working UNIX-like shell environment.
 Specifically we will be using Bash ([Bourne Again Shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell))) which is standard on Linux and macOS. macOS Catalina users will have zsh (Z shell) as their default version.
 Even if you are a Windows user, learning Bash will open up a powerful set of tools on your personal machine, in addition to familiarizing you with the standard remote interface used on almost all servers and super computers.
 
@@ -25,8 +25,8 @@ Even if you are a Windows user, learning Bash will open up a powerful set of too
 >
 >You need to download some files to follow this lesson:
 >
->1. Download [CLI Class Directory](https://osf.io/jwzfk/download) and move the file to your Desktop.
->2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `shell_data` on your Desktop.
+>1. Download [CLI Class Directory](https://osf.io/jwzfk/download) and move the file to your Desktop or save it to your Desktop.
+>2. Unzip/extract the file (ask your instructor if you need help with this step). You should end up with a new folder called `CLI Class Directory` on your Desktop.
 >3. Open the terminal and type `ls` followed by the <kbd>enter</kbd> key.
 >~~~~
 >$ ls
@@ -39,7 +39,7 @@ Even if you are a Windows user, learning Bash will open up a powerful set of too
 >$ pwd
 ~~~~
 >{: .bash}
-> This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `shell_data` folder.
+> This command will show you where you are in your file system, which should now be your home directory. In the lesson, you will find out more about the commands `ls`, `pwd` and how to work with the data in `CLI Class Directory` folder.
 {: .prereq}
 
 [template]: {{ site.workshop_repo }}
