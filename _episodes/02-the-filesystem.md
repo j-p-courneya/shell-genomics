@@ -103,7 +103,7 @@ prints the contents of `~/Desktop`.
 >
 > > ## Solution
 > > 
-> > First use the `man` command to look at the options for `ls`. 
+> > First use the `man`, or `[command] --help` command to look at the options for `ls`. 
 > > ~~~
 > > $ man ls
 > > ~~~

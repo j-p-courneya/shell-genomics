@@ -32,7 +32,7 @@ have two results files, which are stored in our `untrimmed_fastq` directory.
 Navigate to your `untrimmed_fastq` directory:
 
 ~~~
-$ cd /Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq
+$ cd Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq
 ~~~
 {: .bash}
 
@@ -69,12 +69,14 @@ lists only the file that ends with `977.fastq`.
 This command:
 
 ~~~
-$ ls /usr/bin/*.sh
+$ ls ~/Desktop/CLI_Class_Directory/notes/*.txt
 ~~~
 {: .bash}
 
 ~~~
-/usr/bin/amuFormat.sh  /usr/bin/gettext.sh  /usr/bin/gvmap.sh
+/Users/jpcourneya/Desktop/CLI_Class_Directory/notes/commandline_is_cool.txt	
+/Users/jpcourneya/Desktop/CLI_Class_Directory/notes/lab_notes.txt
+/Users/jpcourneya/Desktop/CLI_Class_Directory/notes/intro_commandline.txt
 ~~~
 {: .output}
 
