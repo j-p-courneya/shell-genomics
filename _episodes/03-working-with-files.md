@@ -200,7 +200,7 @@ For more information on advanced usage of `history`, read section 9.3 of
 [Bash manual](https://www.gnu.org/software/bash/manual/html_node/index.html).
 
 > ## Exercise
-> Find the line number in your history for the command that listed all the .sh
+> Find the line number in your history for the command that listed all the .txt
 > files in `~/Desktop`. Rerun that command.
 >
 > > ## Solution
@@ -229,10 +229,10 @@ This will print out all of the contents of the `SRR098026.fastq` to the screen.
 
 > ## Exercise
 > 
-> 1. Print out the contents of the `~/shell_data/untrimmed_fastq/SRR097977.fastq` file. What is the last line of the file? 
+> 1. Print out the contents of the `~/Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq/SRR097977.fastq` file. What is the last line of the file? 
 > 2.  From your home directory, and without changing directories,
 > use one short command to print the contents of all of the files in
-> the `~/shell_data/untrimmed_fastq` directory.
+> the `~/Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq` directory.
 > 
 > > ## Solution
 > > 1. The last line of the file is `C:CCC::CCCCCCCC<8?6A:C28C<608'&&&,'$`.
@@ -444,7 +444,7 @@ bad read.
 
 Now we can move around in the file structure, look at files, and search files. But what if we want to copy files or move
 them around or get rid of them? Most of the time, you can do these sorts of file manipulations without the command line,
-but there will be some cases (like when you're working with a remote computer like we are for this lesson) where it will be
+but there will be some cases (like when you're working with a remote computer) where it will be
 impossible. You'll also find that you may be working with hundreds of files and want to do similar manipulations to all 
 of those files. In cases like this, it's much faster to do these operations at the command line.
 
@@ -456,7 +456,7 @@ and change the file permissions so that we can read from, but not write to, the 
 
 First, let's make a copy of one of our FASTQ files using the `cp` command. 
 
-Navigate to the `shell_data/untrimmed_fastq` directory and enter:
+Navigate to the `~/Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq` directory and enter:
 
 ~~~
 $ cp SRR098026.fastq SRR098026-copy.fastq
@@ -595,7 +595,7 @@ you will be asked whether you want to override your permission settings.
 
 > ## Exercise
 >
-> Starting in the `shell_data/untrimmed_fastq/` directory, do the following:
+> Starting in the `~/Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq/` directory, do the following:
 > 1. Make sure that you have deleted your backup directory and all files it contains.  
 > 2. Create a backup of each of your FASTQ files using `cp`. (Note: You'll need to do this individually for each of the two FASTQ files. We haven't 
 > learned yet how to do this
