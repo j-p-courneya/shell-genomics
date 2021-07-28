@@ -3,14 +3,17 @@ title: "Installing Shell Software"
 teaching: 10
 exercises: 5
 questions:
-- "How can I install shell software?"
-- "How can I run this software once its installed"
+- How can I install shell software?
+- How can I run this software once its installed
 objectives:
 - Install software using the shell
-- Run the software. 
+- Run the software.
 keypoints:
-- Each operating system has specific criteria for installing command line software and not all systems support specific command line tools.
-- You can use bash commands in addition to command line software in the shell to work with genomic data without having to access a graphical user interface making working with a large amount of files and data more accesible. 
+- Each operating system has specific criteria for installing command line software
+  and not all systems support specific command line tools.
+- You can use bash commands in addition to command line software in the shell to work
+  with genomic data without having to access a graphical user interface making working
+  with a large amount of files and data more accesible.
 ---
 
 # Overview
@@ -389,7 +392,7 @@ analyses. Rather than looking at quality scores for each individual read, FastQC
 quality collectively across all reads within a sample. The image below shows one FastQC-generated plot that indicates
 a very high quality sample:
 
-![good_quality](../img/good_quality1.8.png)
+![good_quality](https://i.imgur.com/I1YS90b.png)
 
 The x-axis displays the base position in the read, and the y-axis shows quality scores. In this 
 example, the sample contains reads that are 40 bp long. This is much shorter than the reads we 
@@ -406,6 +409,6 @@ acceptable (yellow), and bad (red) quality scores.
 
 Now let's take a look at a quality plot on the other end of the spectrum. 
 
-![bad_quality](../img/bad_quality1.8.png)
+![bad_quality](https://i.imgur.com/GT1s2wT.png)
 
 Here, we see positions within the read in which the boxes span a much wider range. Also, quality scores drop quite low into the "bad" range, particularly on the tail end of the reads. The FastQC tool produces several other diagnostic plots to assess sample quality, in addition to the one plotted above. 
