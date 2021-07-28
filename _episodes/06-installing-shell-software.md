@@ -10,7 +10,7 @@ objectives:
 - Run the software. 
 keypoints:
 - Each operating system has specific criteria for installing command line software and not all systems support specific command line tools.
-- You can use bash commands in addition to command line software in the shell to work with genomic data with a graphical user interface.
+- You can use bash commands in addition to command line software in the shell to work with genomic data without having to access a graphical user interface making working with a large amount of files and data more accesible. 
 ---
 
 # Overview
