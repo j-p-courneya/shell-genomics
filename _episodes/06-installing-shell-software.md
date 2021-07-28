@@ -377,4 +377,35 @@ $ cd ~/Desktop/CLI_Class_Directory/results/fastqc_untrimmed_reads/
 
 Since we were working on our local computers, we're able to look at each of these HTML files by opening them in a web browser.
 
+## Assessing Quality using FastQC
+In real life, you won't be assessing the quality of your reads by visually inspecting your 
+FASTQ files. Rather, you'll be using a software program to assess read quality and 
+filter out poor quality reads. We'll first use a program called [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to visualize the quality of our reads. 
+Later in our workflow, we'll use another program to filter out poor quality reads. 
 
+FastQC has a number of features which can give you a quick impression of any problems your
+data may have, so you can take these issues into consideration before moving forward with your
+analyses. Rather than looking at quality scores for each individual read, FastQC looks at
+quality collectively across all reads within a sample. The image below shows one FastQC-generated plot that indicates
+a very high quality sample:
+
+![good_quality](../img/good_quality1.8.png)
+
+The x-axis displays the base position in the read, and the y-axis shows quality scores. In this 
+example, the sample contains reads that are 40 bp long. This is much shorter than the reads we 
+are working with in our workflow. For each position, there is a box-and-whisker plot showing 
+the distribution of quality scores for all reads at that position. The horizontal red line 
+indicates the median quality score and the yellow box shows the 1st to 
+3rd quartile range. This means that 50% of reads have a quality score that falls within the 
+range of the yellow box at that position. The whiskers show the absolute range, which covers 
+the lowest (0th quartile) to highest (4th quartile) values.
+
+For each position in this sample, the quality values do not drop much lower than 32. This 
+is a high quality score. The plot background is also color-coded to identify good (green),
+acceptable (yellow), and bad (red) quality scores.
+
+Now let's take a look at a quality plot on the other end of the spectrum. 
+
+![bad_quality](../img/bad_quality1.8.png)
+
+Here, we see positions within the read in which the boxes span a much wider range. Also, quality scores drop quite low into the "bad" range, particularly on the tail end of the reads. The FastQC tool produces several other diagnostic plots to assess sample quality, in addition to the one plotted above. 
