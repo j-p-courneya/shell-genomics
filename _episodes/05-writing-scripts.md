@@ -192,7 +192,7 @@ $ ls -l bad-reads-script.sh
 {: .bash}
 
 ~~~
--rw-rw-r-- 1 dcuser dcuser 0 Oct 25 21:46 bad-reads-script.sh
+-rw-r--r--  1 jpcourneya  staff  100 Jul 28 06:43 bad-reads-script.sh
 ~~~
 {: .output}
 
@@ -224,7 +224,7 @@ $ ./bad-reads-script.sh
 
 The script should run the same way as before, but now we've created our very own computer program!
 
-You will learn more about writing scripts in [a later lesson](https://datacarpentry.org/wrangling-genomics/05-automation/index.html).
+You can learn more on your own about writing scripts in [another lesson](https://datacarpentry.org/wrangling-genomics/05-automation/index.html).
 
 ## Moving and Downloading Data
 
