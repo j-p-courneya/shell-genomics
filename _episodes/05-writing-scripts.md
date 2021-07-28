@@ -228,9 +228,9 @@ You can learn more on your own about writing scripts in [another lesson](https:/
 
 ## Moving and Downloading Data
 
-So far, we've worked with data that is pre-loaded on the instance in the cloud. Usually, however,
-most analyses begin with moving data onto the instance. Below we'll show you some commands to 
-download data onto your instance, or to move data between your computer and the cloud.
+So far, we've worked with data that you downloaded on to your computer. Usually, however,
+most analyses begin with moving data onto your computer or cloud computing instance. Below you will see some commands to 
+download data onto your local computer or cloud instance, or to move data between your computer and the cloud.
 
 ### Getting data from the cloud
 
