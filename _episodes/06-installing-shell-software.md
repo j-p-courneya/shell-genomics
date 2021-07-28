@@ -14,7 +14,7 @@ objectives:
 
 We have gone over many ways that you can use the shell to control your computer using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard combination.
 
-One of the main reasons we spend so much time learning all these fundamentals is to be able to apply them in practice. One way which you can apply these is in combination with running software from the shell. So far all the commands you have been working with are part of BASH. There are programs that are designed to be run from the shell specifically. The following table provides some examples of command line software tools. 
+One of the main reasons we spend so much time learning all these fundamentals is to be able to apply them in practice. One way which you can apply these is in combination with running software from the shell. So far all the commands you have been working with are part of BASH. There are programs that are designed to be run from the shell specifically. The following table provides some examples of commonly used command line software tools. 
 
 ### Software
 
@@ -204,8 +204,6 @@ $ bwa
 > ## SAMtools Versions
 > SAMtools has changed the command line invocation (for the better). But this means that most of the tutorials
 > on the web indicate an older and obsolete usage.
->
-> Using SAMtools version 1.9 is important to work with the commands we present in these lessons.
 {: .callout}
 
 > ## SAMtools Source Code Installation
@@ -282,3 +280,98 @@ $ bcftools
 
 - [Download the IGV installation files](https://software.broadinstitute.org/software/igv/download)
 - Install and run IGV using the [instructions for your operating system](https://software.broadinstitute.org/software/igv/download).
+
+## Running FastQC  
+
+We will now assess the quality of the reads that we downloaded. First, make sure you're still in the `untrimmed_fastq` directory
+
+~~~
+$ cd ~/Desktop/CLI_Class_Directory/shell_data/untrimmed_fastq/ 
+~~~
+{: .bash}
+
+> ## Exercise
+> 
+>  How big are the files?
+> (Hint: Look at the options for the `ls` command to see how to show
+> file sizes.)
+>
+>> ## Solution
+>>  
+>> ~~~
+>> $ ls -l -h
+>> ~~~
+>> {: .bash}
+>> 
+>> ~~~
+>> -rw-r--r--  1 jpcourneya  staff    46K Jul 27 16:43 SRR097977.fastq
+>> -rw-r--r--  1 jpcourneya  staff    42K Jul 27 16:43 SRR098026.fastq
+>> ~~~
+>> {: .output}
+>> 
+>> There are 2 FASTQ files ranging from 42k to 46k. 
+>> 
+> {: .solution}
+{: .challenge}
+
+FastQC can accept multiple file names as input, and on both zipped and unzipped files, so we can use the \*.fastq* wildcard to run FastQC on all of the FASTQ files in this directory.
+
+~~~
+$ fastqc *.fastq* 
+~~~
+{: .bash}
+
+You will see an automatically updating output message telling you the 
+progress of the analysis. When the analysis completes, your prompt will return. So your screen will look something like this: 
+
+~~~
+Started analysis of SRR097977.fastq
+Analysis complete for SRR097977.fastq
+Started analysis of SRR098026.fastq
+Analysis complete for SRR098026.fastq
+~~~
+{: .output}
+
+The FastQC program has created several new files within our
+`data/untrimmed_fastq/` directory. 
+
+~~~
+$ ls 
+~~~
+{: .bash}
+
+~~~
+SRR097977.fastq		SRR097977_fastqc.html	SRR097977_fastqc.zip	SRR098026.fastq		SRR098026_fastqc.html	SRR098026_fastqc.zip
+~~~
+{: .output}
+
+For each input FASTQ file, FastQC has created a `.zip` file and a
+`.html` file. The `.zip` file extension indicates that this is 
+actually a compressed set of multiple output files. We'll be working
+with these output files soon. The `.html` file is a stable webpage
+displaying the summary report for each of our samples.
+
+We want to keep our data files and our results files separate, so we
+will move these
+output files into a new directory within our `results/` directory.
+
+~~~
+$ mkdir -p ~/Desktop/CLI_Class_Directory/results/fastqc_untrimmed_reads 
+$ mv *.zip ~/Desktop/CLI_Class_Directory/results/fastqc_untrimmed_reads/ 
+$ mv *.html ~/Desktop/CLI_Class_Directory/results/fastqc_untrimmed_reads/ 
+~~~
+{: .bash}
+
+Now we can navigate into this results directory and do some closer
+inspection of our output files.
+
+~~~
+$ cd ~/Desktop/CLI_Class_Directory/results/fastqc_untrimmed_reads/ 
+~~~
+{: .bash}
+
+## Viewing the FastQC results
+
+Since we were working on our local computers, we're able to look at each of these HTML files by opening them in a web browser.
+
+
