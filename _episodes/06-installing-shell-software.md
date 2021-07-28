@@ -4,26 +4,17 @@ teaching: 10
 exercises: 5
 questions:
 - "How can I install shell software?"
-- "How can I combine existing commands to do new things?"
+- "How can I run this software once its installed"
 objectives:
 - Install software using the shell
+- Run the software. 
 ---
 
 # Overview
 
-This workshop is designed to be run on pre-imaged Amazon Web Services (AWS)
-instances. With the exception of a spreadsheet program, all of the software and data used in the workshop are hosted on an Amazon 
-Machine Image (AMI). Please follow the instructions below to prepare your computer for the workshop:
+We have gone over many ways that you can use the shell to control your computer using commands entered with a keyboard instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard combination.
 
-- Required additional software + Option A   
-**OR**
-- Required additional software + Option B
-
-## Required additional software
-
-This lesson requires a working spreadsheet program. If you don't have a spreadsheet program already, you can use LibreOffice. It's a free, open source spreadsheet program.  Directions to install are included for each Windows, Mac OS X, and Linux systems below. For Windows, you will also need to install Git Bash, PuTTY, or the Ubuntu Subsystem.
-
-
+One of the main reasons we spend so much time learning all these fundamentals is to be able to apply them in practice. One way which you can apply these is in combination with running software from the shell. So far all the commands you have been working with are part of BASH. There are programs that are designed to be run from the shell specifically. The following table provides some examples of command line software tools. 
 
 ### Software
 
