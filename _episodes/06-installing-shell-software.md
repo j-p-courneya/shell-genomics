@@ -382,9 +382,7 @@ Since we were working on our local computers, we're able to look at each of thes
 
 ## Assessing Quality using FastQC
 In real life, you won't be assessing the quality of your reads by visually inspecting your 
-FASTQ files. Rather, you'll be using a software program to assess read quality and 
-filter out poor quality reads. We'll first use a program called [FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) to visualize the quality of our reads. 
-Later in our workflow, we'll use another program to filter out poor quality reads. 
+FASTQ files.  
 
 FastQC has a number of features which can give you a quick impression of any problems your
 data may have, so you can take these issues into consideration before moving forward with your
